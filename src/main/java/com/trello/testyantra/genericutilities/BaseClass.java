@@ -9,6 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 public class BaseClass {
 //Object creation statements
@@ -22,7 +23,7 @@ public class BaseClass {
     return loginPageValidateTitle;
   }
   public Boolean validation2() throws IOException {
-	System.out.println("----------------"+fileUtil.readDataFromPropertyFile("Boardtitle"));
+    System.out.println("----------------"+fileUtil.readDataFromPropertyFile("Boardtitle"));
 	Boolean boardtitle = webUtil.explicitWait(driver).until(ExpectedConditions.titleIs(fileUtil.readDataFromPropertyFile("Boardtitle")));
 	System.out.println("boardtitle------------------"+boardtitle);
     return boardtitle;
@@ -37,8 +38,9 @@ public class BaseClass {
 	  }
   
   @BeforeMethod
-  public void beforeconfig() throws IOException {
-	String browserName=fileUtil.readDataFromPropertyFile("Browser");
+  @Parameters("browserName")
+  public void beforeconfig(String browserName ) throws IOException {
+	//String browserName=fileUtil.readDataFromPropertyFile("Browser");
 	if (browserName.equals("Chrome")) {
 		driver=new ChromeDriver();
 	}else if(browserName.equals("Edge")) {
