@@ -37,6 +37,7 @@ public class BaseClass {
 	      return createBoard;
 	  }
   
+  
   @BeforeMethod
   @Parameters("browserName")
   public void beforeconfig(String browserName ) throws IOException {
