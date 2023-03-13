@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Pass: Log in page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Pass: Board page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Pass: Create board page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Pass: Logout of your atlasian account Page is displayed]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-02-23T18:23:42 IST" name="Default suite" finished-at="2023-02-23T18:26:28 IST" duration-ms="166389">
+    <groups>
+    </groups>
+    <test started-at="2023-02-23T18:23:42 IST" name="Default test" finished-at="2023-02-23T18:26:28 IST" duration-ms="166389">
+      <class name="trellotesting.EndToEndTesting">
+        <test-method is-config="true" signature="beforeconfig()[pri:0, instance:trellotesting.EndToEndTesting@4b8ee4de]" started-at="2023-02-23T18:23:42 IST" name="beforeconfig" finished-at="2023-02-23T18:24:18 IST" duration-ms="35545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeconfig -->
+        <test-method signature="testCase_01()[pri:0, instance:trellotesting.EndToEndTesting@4b8ee4de]" started-at="2023-02-23T18:24:18 IST" name="testCase_01" finished-at="2023-02-23T18:26:27 IST" duration-ms="129643" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Pass: Log in page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Pass: Board page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Pass: Create board page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Pass: Logout of your atlasian account Page is displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testCase_01 -->
+        <test-method is-config="true" signature="afterConfig()[pri:0, instance:trellotesting.EndToEndTesting@4b8ee4de]" started-at="2023-02-23T18:26:27 IST" name="afterConfig" finished-at="2023-02-23T18:26:28 IST" duration-ms="1107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterConfig -->
+      </class> <!-- trellotesting.EndToEndTesting -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
