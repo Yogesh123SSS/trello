@@ -63,7 +63,7 @@
         <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>
-                            Parameterization.xml
+                           Prameterization.xml
                         </suiteXmlFile>
                     </suiteXmlFiles>
         </configuration>
